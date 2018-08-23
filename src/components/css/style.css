@@ -2,22 +2,34 @@ html {
 }
 
 body {
-    /*background: rgba(255, 255, 255, 1.0);*/
-    background-image: linear-gradient(#f1f2f6, #d1d8e0, #778ca3d0, #4b6584);
+    background: rgba(236, 204, 104,1.0);
+    /*background-image: linear-gradient(30deg, hsla(258.11, 53.88%, 67.41%, 1) 0%, hsla(258.11, 53.88%, 67.41%, 0) 65%),*/
+    linear-gradient(257deg, hsla(181.18, 100%, 88.89%, 1) 0%, hsla(181.18, 100%, 88.89%, 0) 65%),
+    linear-gradient(167deg, hsla(176.6, 100%, 80.89%, 1) 0%, hsla(176.6, 100%, 80.89%, 0) 65%),
+    linear-gradient(44deg, hsla(126.79, 100%, 82%, 1) 0%, hsla(126.79, 100%, 82%, 0) 65%),
+    linear-gradient(135deg, hsla(36.23, 100%, 50%, 1) 0%, hsla(36.23, 100%, 50%, 0) 70%),
+    linear-gradient(25deg, hsla(252.34, 100%, 50%, 1) 10%, hsla(252.34, 100%, 50%, 0) 80%),
+    linear-gradient(315deg, hsla(184.06, 100%, 79.56%, 1) 15%, hsla(184.06, 100%, 79.56%, 0) 80%),
+    linear-gradient(245deg, hsla(179.4, 0%, 100%, 1) 100%, hsla(179.4, 0%, 100%, 0) 70%);
     font-family: 'Lato', sans-serif;
-    font-family: 'SolaimanLipi', serif;
-    /*font-family: 'Open Sans', sans-serif;*/
-    /*background: url("../../assets/bg/PaintSquares_1400x900.jpg") no-repeat center center fixed;*/
-    /*background: url("../../assets/diary-page/old-paper-013.jpg") no-repeat center center fixed;*/
+    /*font-family: 'SolaimanLipi', serif;*/
+    /*background: url("../../assets/bg/luke-guedon-beauty.jpg") no-repeat center center fixed;*/
+    /*background: url("../../assets/bg/") no-repeat center center fixed;*/
     /*background-size: cover;*/
 }
 
-h1, h2, p {
+h1, h2, h3, h4, h5, h6 {
     color: #2f3542;
     letter-spacing: .05em;
-    line-height: 2em;
-    font-weight: 700;
+    line-height: 1em;
+    font-weight: 900;
+}
 
+p {
+    color: #2f3542;
+    letter-spacing: .1em;
+    line-height: 1.5em;
+    font-weight: 700;
 }
 
 #gotoTop {
@@ -47,11 +59,10 @@ h1, h2, p {
     height: auto;
     margin: 0 auto;
     font-size: 14px;
-
 }
 
 .header {
-    background-color: transparent;
+    background: transparent;
     text-align: center;
     margin-top: 150px;
 }
@@ -76,7 +87,7 @@ h1, h2, p {
 }
 
 .maintopic {
-    padding: 40px;
+    padding: 40px 40px 0 40px;
     transition: all .2s;
 }
 
@@ -154,7 +165,6 @@ h1, h2, p {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -163,36 +173,6 @@ h1, h2, p {
         margin: 0 auto;
     }
 }
-
-/*.thumbstories {*/
-/*max-width: 840px;*/
-/*width: 100%;*/
-/*max-height: 366px;*/
-/*padding: 20px;*/
-/*display: flex;*/
-/*flex-wrap: wrap;*/
-/*}*/
-
-/*@media screen and (max-width: 768px) {*/
-/*.thumbstories {*/
-/*overflow: hidden;*/
-/*}*/
-/*}*/
-
-/*.block-reader {*/
-/*max-width: 365px;*/
-/*width: 100%;*/
-/*max-height: 110px;*/
-/*font-size: 12px;*/
-/*margin-right: 10px;*/
-/*margin-bottom: 22px;*/
-/*text-decoration: none;*/
-/*text-shadow: none;*/
-/*color: black;*/
-/*display: flex;*/
-/*flex-wrap: nowrap;*/
-/*background-color: transparent;*/
-/*}*/
 
 .block-thumbs {
     height: 110px;
@@ -204,26 +184,14 @@ h1, h2, p {
 .breakpoint {
     padding: 10px;
     margin: 0 auto;
+    max-height: 110px;
 }
 
-/*.block-head {*/
-/*font-size: 14px;*/
-/*margin-right: 10px;*/
-/*text-decoration: none;*/
-/*color: #000;*/
-/*font-weight: bold;*/
-/*}*/
-
-/*.block_para {*/
-/*position: relative;*/
-/*font-size: 12px;*/
-/*}*/
 /*strart of IBcontainer*/
 .ib-container {
     position: relative;
     width: 100%;
     height: auto;
-    /*max-height: 407px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -273,6 +241,7 @@ h1, h2, p {
     transition: opacity 0.4s linear,
     transform 0.4s ease-in-out,
     box-shadow 0.4s ease-in-out;
+    /*box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 20px 0px rgba(0, 0, 0, 0.19);*/
 
 }
 
@@ -371,6 +340,7 @@ h1, h2, p {
     max-height: 500px;
     margin-right: 10px;
     padding: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 768px) {
@@ -411,6 +381,12 @@ h1, h2, p {
 .contact-section {
     position: relative;
     width: 100%;
+    /*background: url("../../assets/bg/vintage_blog.jpg") no-repeat center center fixed;*/
+    /*background-size: cover;*/
+}
+
+.contact-section h1 p{
+    padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -575,7 +551,7 @@ small {
     z-index: 300;
     display: flex;
     position: fixed;
-    background-color: rgba(255, 255, 255,.4);
+    background-color: rgba(255, 255, 255, .4);
     /*background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);*/
     box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2), 5px 6px 40px 10px rgba(0, 0, 0, 0.19);
     width: calc(100% - 140px);
@@ -932,16 +908,16 @@ footer {
         transition: 0.5s;
         background-color: #2f3542;
     }
-    /*.blurred_overlay {*/
-        /*position: absolute;*/
-        /*width: 100%;*/
-        /*height: 35%;*/
-        /*top: 50%;*/
-        /*transform: translateY(-89%);*/
-        /*background: url("../../assets/bg/greenlagoon.jpg");*/
-        /*filter: blur(10px);*/
-    /*}*/
 
+    /*.blurred_overlay {*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 35%;*/
+    /*top: 50%;*/
+    /*transform: translateY(-89%);*/
+    /*background: url("../../assets/bg/greenlagoon.jpg");*/
+    /*filter: blur(10px);*/
+    /*}*/
     .overlay.visible {
         opacity: .8;
         transform: translateY(0);
@@ -985,14 +961,11 @@ footer {
         font-size: 30px;
     }
 
-
-    .overlay ul, li{
+    .overlay ul, li {
         margin: 0 auto;
         width: 60%;
         padding: 0;
     }
-
-
 
     .overlay .closebtn {
         position: absolute;
